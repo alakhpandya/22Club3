@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!-- <div>
+            <input height="200px" name="position" type="image" src="/images/sunset.jpg" alt="">
+        </div> -->
+        <input type="range" value="10000" step="1000" min="5000" max="100000" oninput="this.nextElementSibling.value = this.value">
+        <output>10000</output>
+    </form>
+</body>
+<script>
+    document.registrationForm.ageInputId.oninput = function(){
+    document.registrationForm.ageOutputId.value = document.registrationForm.ageInputId.value;
+ }
+</script>
+</html>

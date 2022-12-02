@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #box1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        border: 2px solid green;
+        height: 50px;
+        width: 50px;
+        background-color: lightgreen;
+        cursor: pointer;
+        /* animation-name: move-box; */
+        animation-duration: 4s;
+        /* animation-iteration-count: infinite; */
+    }
+
+    #progress-bar-container{
+        border: 2px solid black;
+        margin: 10px;
+    }
+    #progress-bar {
+        height: 20px;
+        width: 10px;
+        background-color: green;
+        animation-name: progress;
+        animation-iteration-count: 1;
+        animation-duration: 5s;
+    }
+
+    @keyframes move-box {
+
+        /*         
+        from{
+            top: 50px;
+        }
+        to{
+            top: 300px;
+        }
+         */
+        0% {
+            top: 50px;
+            left: 50px;
+        }
+
+        25% {
+            top: 300px;
+            left: 50px;
+        }
+
+        50% {
+            top: 300px;
+            left: 300px;
+        }
+
+        75% {
+            top: 50px;
+            left: 300px;
+        }
+    }
+
+    @keyframes progress {
+        0%{ width: 10px;}
+        10%{width: 10%;}
+        20%{width: 20%;}
+        30%{width: 30%;}
+        40%{width: 40%;}
+        50%{width: 50%;}
+        60%{width: 60%;}
+        70%{width: 70%;}
+        80%{width: 80%;}
+        90%{width: 90%;}
+        100%{width: 100%;}
+    }
+</style>
+
+<body>
+    <div id="box1"></div>
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        text-align: center;
+    }
+    #upper, #lower{
+        display: inline;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        background-color: cadetblue;
+        margin-right: 0.5rem;
+        display: inline-block;
+    }
+
+    /* ---------------------------- Media Queries ------------------------------- */
+    @media (max-width : 1200px) {
+        #upper, #lower{
+            display: block;
+        }
+        .box{
+            background-color: chartreuse;
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            
+        }
+    }
+
+    @media(max-width : 810px){
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="upper">
+            <div class="box" id="item1"></div>
+            <div class="box" id="item2"></div>
+            <div class="box" id="item3"></div>
+            <div class="box" id="item4"></div>
+            <div class="box" id="item5"></div>
+        </div>
+        <div id="lower">
+            <div class="box" id="item6"></div>
+            <div class="box" id="item7"></div>
+            <div class="box" id="item8"></div>
+            <div class="box" id="item9"></div>
+            <div class="box" id="item10"></div>
+        </div>
+    </div>
+</body>
+
+</html>

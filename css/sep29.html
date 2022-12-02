@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: lightblue;
+    }
+
+    div {
+        background-color: purple;
+        margin-bottom: 1rem;
+        width: 300px;
+        /* box-sizing: border-box; */
+        /* box-sizing: content-box;        default */
+    }
+
+    #box1 {
+        padding: 1rem;
+        border: 10px solid black;
+    }
+
+    /* #box2{
+        width: 352px;
+    } */
+
+    #box3 {
+        width: 50px;
+        padding: 0.5rem;
+        color: white;
+        border-radius: 5px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: auto;
+    }
+
+    img {
+        border: 5px solid red;
+        width: 100px;
+        /* margin: auto;       margin auto will not work on inline elements */
+    }
+    img:hover{
+        border: none;
+        border-left: 5px solid red
+    }
+    #img-box{
+        width: fit-content;
+        margin: auto;
+    }
+
+    #btn-box {
+        margin: auto;
+        width: fit-content;
+    }
+</style>
+
+<body>
+    <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eveniet vel delectus animi neque
+        modi numquam dignissimos quidem placeat dolorum!</div>
+    <div id="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore omnis accusamus laborum aliquid
+        voluptates voluptas nostrum? Tempora dolore expedita quibusdam iste sunt reiciendis obcaecati, ratione nostrum
+        illum aspernatur quae tenetur!</div>
+    <div id="box3">Text</div>
+    <div id="img-box">
+        <img src="/images/cat.jpg" alt="">
+    </div>
+    <div id="btn-box">
+        <button>Click</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show-text"></p>
+    <button onclick="document.getElementById('show-text').innerText = 'I am the hidden text!'">Show hidden text</button>
+    <br> <br>
+    <div>
+        <button onclick="document.getElementById('date').innerText = Date()">Show today's date</button>
+        <span id="date"></span>
+    </div>
+
+    <h1 id="hide-it">Extra Title</h1>
+    <a href="#" onclick="document.getElementById('hide-it').style.display = 'none'">Hide it!</a>
+
+    <p id="css">Style Me!</p>
+    <button onclick="document.getElementById('css').style.backgroundColor = 'skyblue'">Style it!</button>
+
+    <div>
+        <img src="/images/bulb_off.jpg" alt="" id="bulb">
+    </div>
+    <div>
+        <button onclick="document.getElementById('bulb').src = '/images/bulb_on.jpg'">ON</button>
+        <button onclick="document.getElementById('bulb').src = '/images/bulb_off.jpg'">OFF</button>
+    </div>
+</body>
+</html>

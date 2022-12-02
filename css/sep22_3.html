@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: lightpink;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-box{
+        /* border: 2px solid black; */
+        width: 500px;
+        border-radius: 20px;
+        padding: 3rem;
+        background-color: maroon;
+    }
+    .form-box form{
+        width: 300px;
+        margin: auto;
+        color: white;
+        font-size: 1.1rem;
+    }
+    .form-box form div{
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem;
+    }
+    .form-box form .submit-box input{
+        margin: 1rem 0;
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: maroon;
+    }
+    .req::after{
+        content: '*';
+        color: yellow;
+    }
+</style>
+<body>
+    <div class="form-box">
+        <form action="">
+            <div>
+                <label class="req" for="">First Name: </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Middle Name: </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Last Name: </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Mobile no: </label>
+                <input type="tel">
+            </div>
+            <div>
+                <label class="req" for="">Email: </label>
+                <input type="email" name="" id="">
+            </div>
+            <div>
+                <label class="req" for="">Password: </label>
+                <input type="password" name="" id="">
+            </div>
+            <div class="submit-box">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

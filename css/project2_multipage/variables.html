@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --lightBg: royalblue;
+        --standardHeight: 500px;
+        --narrowMargin: 10px 20px 30px 40px;
+        --main-fonts: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .input-box{
+        /* background-color: var(--lightBg); */
+        margin: var(--narrowMargin);
+    }
+    .input-box input{
+        background-color: var(--lightBg);
+    }
+    .gender-box{
+        background-color: var(--lightBg);
+        font-family: var(--main-fonts);
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="input-box">
+                <input type="text" name="" placeholder="Name" id="">
+            </div>
+            <div class="gender-box">
+                <div><input type="radio" name="gender" id="male"><label for="male">Male</label></div>
+                <div><input type="radio" name="gender" id="female"><label for="female">Female</label></div>
+                <div><input type="radio" name="gender" id="others"><label for="others">Others</label></div>
+            </div>
+            <div class="submit-box">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

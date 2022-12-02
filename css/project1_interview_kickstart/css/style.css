@@ -1,0 +1,407 @@
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------- Global --------------------- */
+body{
+    font-family: 'Inter', sans-serif;
+    color: #44555f;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.btn{
+    background-color: #3996D2;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.ik-logo{
+    height: 35px;
+}
+.flex-row-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blue-text{
+    color: #3996D2;
+}
+.bold-text{
+    font-weight: 700;
+}
+.dark-text{
+    color: #201845;
+}
+section, nav{
+    padding: 0 13vw;
+}
+
+/* --------------------- Navbar --------------------- */
+nav{
+    background-color: white;
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+}
+
+/* --------------------- Banner Section --------------------- */
+.banner{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4.5rem 0;
+    padding-right: 9vw;
+}
+
+.banner #banner-intro-text{
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner h1{
+    font-size: 3rem;
+}
+
+.banner h1 + p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0 2.7rem;
+}
+
+.banner ul .blue-tick{
+    color: #3996D2;
+    margin-right: 0.5rem;
+}
+
+.banner ul li{
+    margin: 2rem 0;
+}
+
+.banner ul + p{
+    /* background-color: #3996D2; */
+    background-image: radial-gradient(circle, #dde9f5, #e3edf7, #e9f1f8, #f0f5fa, #f6f9fc);
+    margin-bottom: 2rem;
+    padding: 0.6rem;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.banner .btn + p{
+    margin-top: 2.7rem;
+}
+
+.banner .timer{
+    gap: 1rem;
+    font-size: 1.8rem;
+    justify-content: left;
+    margin: 0.5rem 0 0.7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner .timer .time-unit{
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.banner #banner_img{
+    height: 410px;
+}
+
+/* --------------------- Brands Section --------------------- */
+.brands{
+    text-align: center;
+    color: #201845;
+}
+
+.brands h1{
+    font-size: 2.1rem;
+}
+
+.brands table{
+    margin: 1.5rem auto;
+}
+
+.brands table td{
+    padding: 0.9rem;
+}
+
+.brands .brand-img{
+    width: 110px;
+}
+
+.brands .small-img{
+    width: 70px;
+}
+
+/* --------------------- Pop-up Section --------------------- */
+
+.pop-up{
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(57, 149, 210, 0.5);
+    transform: translateY(50%);
+    background-color: white;
+    border-radius: 20px;
+    width: 74vw;
+    margin: auto;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+}
+
+.pop-up .milestone{
+    /* border: 1px solid #3996D2; */
+    width: 15vw;
+}
+
+.pop-up .milestone .milestone-headline{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pop-up .milestone .milestone-headline + p{
+    font-size: 1.2rem;
+}
+
+/* --------------------- Info Section --------------------- */
+
+.info{
+    background-color: #DBEAFF;
+    padding: 10rem 0 5rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    padding: 13rem 13vw 5rem;
+    gap: 2rem;
+}
+.info #feature1{
+    grid-row: span 2;
+}
+.info #feature1 h1{
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+.features .icon{
+    font-size: 2.2rem;
+    color: #3996D2;
+    margin-bottom: 1rem;
+}
+.features .custom-icon{
+    border: 4px solid #3996D2;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+.features h4{
+    font-weight: 600px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    /* letter-spacing: 1px; */
+}
+.features p{
+    line-height: 1.5rem;
+}
+
+/* --------------------- Courses Section --------------------- */
+.courses{
+    padding: 5rem;
+}
+
+
+/* --------------------- Trainers Section --------------------- */
+.trainers{
+    background: linear-gradient(to bottom, #E9F6FF, #fff);
+    text-align: center;
+    padding: 5rem 10rem;
+}
+.trainers > h1{
+    font-size: 2.1rem;
+    color: #142631;
+}
+.trainers > p{
+    font-size: 1.1rem;
+    color: #44555f;
+    margin-top: 1.5rem;
+}
+
+.upper-card-container{
+    justify-content: space-evenly;
+}
+
+.card{
+    border: 1px solid rgb(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 210px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 20px rgba(218, 240, 255, 0.6);
+    margin-top: 4rem;
+}
+
+.card .upper-card{
+    background-color: #D1EDFF;
+    text-align: left;
+    position: relative;
+    height: 170px;
+}
+
+.card .trainer-img{
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card .circle{
+    background-color: #B4DCF6;
+    border: 3px solid #70B5E2;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+}
+
+.card .linkedin-logo{
+    height: 40px;
+    border: 6px solid white;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 5;
+}
+
+.card .org-logo{
+    width: 50%;
+    background-color: rgba(252, 252, 252);
+    padding: 8px 24px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.card .lower-card .trainer-name{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #111112;
+}
+.card .lower-card .trainer-designation{
+    color: rgba(17, 17, 18, 0.7);
+    margin: 0.5rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+.lower-card-container{
+    gap: 4.5rem;
+    margin-top: 2rem;
+}
+
+.lower-card-container .card{
+    width: 250px;
+}
+
+
+/* --------------------- Carousel Section --------------------- */
+
+.carousel{
+    background-color: #E3EDFE;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+#bg-box{
+    background-image: linear-gradient(to right, #c5d7f6, #9ec0f9);
+    height: 450px;
+    width: 65vw;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: translateX(-52%);
+}
+
+.carousel .item{
+    /* border: 2px solid black; */
+    background-color: #fff;
+    height: 370px;
+    width: 320px;
+    padding: 3.5rem 2.3rem;
+    border-radius: 15px;
+}
+
+.carousel .student-title{
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #201845;
+    font-size: 1.1rem;
+}
+.carousel .student-title h3{
+    font-weight: 600;
+}
+
+.carousel .student-title .student-img{
+    height: 50px;
+    width: 50px;
+}
+
+.carousel .item .review{
+    color: #142631;
+    font-size: 1.1rem;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    background-color: #D9ECF8;
+    color: #3996D2;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(62, 62, 227);
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: transparent;
+    color: rgb(62, 62, 227);
+}
+
+.owl-nav{
+    /* background-color: red; */
+    position: absolute;
+    width: 80vw;
+    bottom: 50%;
+    left: -5vw;
+    transform: translateY(50%);
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+/* .owl-nav .owl-prev{
+    position: absolute;
+    left: -100%;
+}
+.owl-nav .owl-next{
+
+} */

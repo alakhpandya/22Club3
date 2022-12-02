@@ -1,0 +1,23 @@
+/* ------------- Antonio ------------- */
+@font-face {
+    font-family: Antonio;
+    src: url('/fonts/Antonio/Antonio-VariableFont_wght.ttf');
+}
+
+/* ------------- Lobster ------------- */
+@font-face {
+    font-family: Lobster;
+    src: url('/fonts/Lobster/Lobster-Regular.ttf');
+}
+
+/* ------------- Ubuntu ------------- */
+@font-face {
+    font-family: Ubuntu;
+    src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+/* ------------- Rajdhani ------------- */
+@font-face {
+    font-family: Rajdhani;
+    src: url('/fonts/Rajdhani/Rajdhani-Regular.ttf');
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: lightblue;
+    }
+    #line{
+        background-color: purple;
+        height: 2px;
+        border: none;
+    }
+    h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2.5rem;
+    }
+    p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: crimson;
+        position: relative;
+    }
+    a:hover::after{
+        content: attr(data-tooltip);
+        background-color: black;
+        color: white;
+        position: absolute;
+        bottom: 100%;
+        left: 20%;
+        white-space: nowrap;
+        padding: 0.3rem 1.5rem;
+        border-radius: 1em;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet officiis iure reprehenderit.</h1>
+    <hr id="line">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a data-tooltip="Subscribe to our youtube channel" href="">Voluptas unde molestias</a> ut ipsam quibusdam odit id ducimus! Perferendis tempora enim libero corporis ex in ipsam sint, blanditiis, delectus doloremque, error tempore excepturi harum! <a data-tooltip="Follow us on twitter" href="">Assumenda magnam</a> excepturi modi est. Suscipit natus tempore odio labore at illum, ut nulla? Eum error possimus ipsa ratione nam non animi totam magnam voluptatum blanditiis reiciendis eligendi et sapiente consequuntur iusto provident, culpa consectetur nobis quidem quasi iste asperiores. Harum, illo natus porro atque eum nobis pariatur animi consectetur nostrum. Tenetur quam aliquid magni sed! <a data-tooltip="Join our facebook community" href="">Soluta, quam?</a> Ducimus rem quia fugit nam culpa repellendus impedit suscipit quisquam praesentium ipsum aut, aspernatur perspiciatis, numquam quae, dolorem sint totam ipsam voluptates amet adipisci esse neque. Quae, eos aliquam, alias expedita, voluptatem nobis similique dolorum delectus exercitationem unde possimus. Eum sapiente sit autem cum aut adipisci, ratione placeat dolorum maxime, deleniti recusandae aliquam fugit dolorem ducimus quia corrupti! Ipsam labore nisi amet aspernatur quis cumque totam deleniti pariatur sequi illum inventore, accusamus ipsum delectus, voluptatum, eum dignissimos hic. Illum ducimus quibusdam dicta modi mollitia. Minima dolor soluta, assumenda necessitatibus quae inventore ipsa quo possimus iure ab tempora perferendis. Consectetur harum aut natus molestiae atque fugit nam repudiandae laudantium vel architecto, veniam sequi ipsum assumenda obcaecati, eos modi possimus inventore maiores odio! Aperiam cupiditate quo cum, pariatur velit, eius ipsa magni in minima, nihil laborum numquam itaque. Adipisci pariatur ipsam incidunt eligendi vel ullam eos deserunt maxime, voluptate porro at, est sunt provident? Illum placeat sequi veniam dicta a temporibus voluptatem sunt itaque doloremque. Nesciunt similique beatae id esse totam aliquam natus fugiat ipsum iure aperiam in non, <a data-tooltip="Give us a heart on instagram!" href="">nemo perferendis</a> harum aspernatur magnam quos! Quibusdam rerum corrupti rem sed veniam, dolorum modi officiis voluptate? Aut, libero nesciunt dicta ipsam iste repudiandae in nam nobis! Expedita quos ad pariatur hic fugit?</p>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #box1-container{
+        border: 2px solid red;
+        width: 300px;
+        height: 300px;
+        margin: 2rem auto;
+        position: relative;
+    }
+    #box1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 2px solid green;
+        height: 50px;
+        width: 50px;
+        background-color: lightgreen;
+        cursor: pointer;
+
+        /* transition-delay: 1s; */
+        /* transition-duration: 0.5s; */
+        /* transition-duration: 500ms; */
+        transition-duration: 0.5s;
+        /* transition-property: background-color; */
+        /* transition-property: all; */
+
+
+
+
+        /* transform: translateX(-100px); */
+        /* transform: translateY(100px); */
+        /* transform: translate(50%, 50%); */
+        /* transform: translate(-50%, -50%); */
+        /* transform: translate(70px, -50px); */
+        /* transform: scale(1.5, 3); */
+        /* transform: scaleX(2); */
+        /* transform: rotate(45deg); */
+        /* transform: rotate(90deg); */
+        /* transform: rotate(180deg); */
+    }
+    #box1:hover{
+        /* transform: rotate(360deg); */
+        /* transform: scale(1.2); */
+        transform: scale(1.2);
+        /* background-color: red; */
+    }
+
+    #box2{
+        background-color: green;
+        height: 30px;
+        width: 10px;
+        /* transition: all 1s ease-in-out; */
+        transition: 1s;     /* default for transition-property is 'all' & for timing-function is 'ease'
+        /* transition-duration: 4s; */
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-out; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: ease; */
+        /* transition-timing-function: cubic-bezier(0.01, 0.5, 0.01, 0.5); */
+        /* transition-timing-function: ease-in-out; */
+    }
+    #box2:hover{
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div id="box1-container">
+        <div id="box1">
+            BOX 1
+        </div>
+    </div>
+
+    <div id="box2"></div>
+</body>
+
+</html>

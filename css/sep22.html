@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        background-color: rgb(69, 25, 25);
+    }
+
+    .container::after {
+        content: '';
+        /* background-color: blue; */
+        height: 100vh;
+        width: 100vw;
+        background: url('/images/pizza-g6c4430aaf_1280.jpg');
+        background-size: 100vw 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h1+p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <h1>La Royala Pizza</h1>
+        <p>The most fresh pizza in the town!</p>
+    </div>
+</body>
+
+</html>

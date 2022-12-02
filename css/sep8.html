@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    a:link{
+        color: green;
+    }
+    a:hover{
+        color: crimson;
+    }
+    a:visited{
+        color: pink;
+    }
+    a:active{
+        color:darkslategrey;
+    }
+    li:hover{
+        color: blue;
+    }
+    li:active{
+        color: red;
+    }
+
+    input[placeholder = 'Last Name']{
+        background-color: lightyellow;
+    }
+
+    input[type = 'email']{
+        color: red;
+    }
+    
+    a[target = '_blank']{
+        background-color: beige;
+    }
+
+    a[target]{
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <!-- Pseudo Classes -->
+    <div><a target="_blank" href="https://google.com">Google</a></div> <br> <br>
+    <div><a target="" href="https://facebook.com">Facebook</a></div> <br> <br>
+    <div><a href="https://twitter.com">Twitter</a></div> <br> <br>
+    <div><a target="_self" href="https://instagram.com">Instagram</a></div> <br> <br>
+
+    <div>
+        <ul>
+            <li>Royal</li>
+            <li>Technosoft</li>
+        </ul>
+    </div>
+
+    <form action="">
+        <div>
+            <input type="text" placeholder="First Name">
+        </div>
+        <div>
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div>
+            <input type="email" name="" id="" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" name="" id="" placeholder="Password">
+        </div>
+        <div>
+            <input type="password" name="" id="" placeholder="Confirm Password">
+        </div>
+        <div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </form>
+
+</body>
+</html>

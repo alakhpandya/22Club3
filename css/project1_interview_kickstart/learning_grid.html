@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: #ddd;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        /* border: 2px solid blue; */
+        display: grid;
+        /* grid-template-columns: 300px 300px 300px 300px; */
+        /* grid-template-columns: 22% 22% 22% 22%; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        width: 85vw;
+    }
+    .cards{
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .cards h3{
+        font-size: 0.9rem;
+    }
+    .cards p{
+        font-size: 0.9rem;
+    }
+    .cards h2{
+        margin: 1rem 0;
+    }
+
+
+    #card1{
+        grid-column: span 2;
+        background-color: blueviolet;
+    }
+
+    #card2{
+        background-color: #323252;
+    }
+
+    #card3{
+        grid-row: span 2;
+        background-color: #fff;
+    }
+
+    #card4{
+        background-color: #fff;
+    }
+
+    #card5{
+        grid-column: span 2;
+        background-color: #222;
+    }
+
+    #card1, #card2, #card5{
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="cards" id="card1">
+            <h3>Daniel Clifford</h3>
+            <p>Verified Graduate</p>
+            <h2>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum, culpa explicabo laudantium omnis distinctio commodi placeat natus dolorem. Consequuntur?</p>
+        </div>
+        <div class="cards" id="card2">
+            <h3>Krushnam Patel</h3>
+            <p>Verified Graduate</p>
+            <h2>The team was really supportive and kept me motivated.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea ab minus asperiores cum incidunt consequuntur. Alias, at minus. Culpa.</p>
+        </div>
+        <div class="cards" id="card3">
+            <h3>Khush Amin</h3>
+            <p>Verified Graduate</p>
+            <h2>Such a life-changing experience. Highly recommended!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore itaque consequatur quis, ducimus voluptatibus facere. Reprehenderit nesciunt in perspiciatis nihil corporis magni laborum totam distinctio voluptatibus aliquam beatae odit doloremque, consequatur eligendi suscipit similique, inventore iure. Maxime iure soluta maiores, blanditiis asperiores nam hic, beatae mollitia, eveniet minima provident natus culpa? Et nemo consectetur non cumque impedit quam ad doloribus minus molestias. Non, odio laudantium debitis accusamus veritatis fuga omnis eius totam nostrum odit obcaecati, eligendi possimus dolore quia aliquid?</p>
+        </div>
+        <div class="cards" id="card4">
+            <h3>Harsh Vadhvana</h3>
+            <p>Verified Graduate</p>
+            <h2>An overall wonderful and rewarding experience.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam harum facilis quidem quia! Cupiditate, totam cumque pariatur nam repellendus ea.</p>
+        </div>
+        <div class="cards" id="card5">
+            <h3>Dharmangi Patel</h3>
+            <p>Verified Graduate</p>
+            <h2>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them learning from their experiences was easy.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit aut fugit sit laboriosam possimus doloribus placeat nobis aspernatur assumenda quam expedita voluptas quasi exercitationem aperiam, tempore deserunt repellendus? Fugit, nulla sapiente quisquam aliquam nesciunt perferendis laboriosam aperiam quia hic.</p>
+        </div>
+    </div>
+</body>
+</html>

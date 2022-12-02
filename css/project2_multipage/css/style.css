@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,900;1,300;1,400;1,500&display=swap');
+
+/* ----------------------- CSS Reset ----------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{
+} */
+body{
+    --bg-color: royalblue;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ----------------------- Navbar ----------------------- */
+nav{
+    height: 12vh;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+nav img{
+    height: 75%;
+}
+nav .membership-container{
+    display: flex;
+    gap: 0.2rem;
+}
+.membership-container form{
+    position: relative;
+}
+nav input{
+    height: 2.5rem;
+    width: 200px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid var(--bg-color);
+}
+nav input:focus{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 10px;
+    color: var(--bg-color);
+}
+.search-btn{
+    /* border: 1px solid black; */
+    background-color: white;
+    padding: 0.45rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 1.4rem;
+    transform: translate(85%, -50%);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+.membership-container .member-btn{
+    border: 2px solid var(--bg-color);
+    background-color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.membership-container .member-btn:hover{
+    color: white;
+    background-color: var(--bg-color);
+    border-color: white;
+}
+#login-btn{
+    margin-left: 2rem;
+}
+
+/* ----------------------- Login Container ----------------------- */
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    border: 2px solid white;
+    padding: 3rem 2rem 1rem;
+    border-radius: 1rem;
+    position: relative;
+    min-width: 270px;
+}
+.container .signup-form{
+    display: flex;
+    gap: 2rem;
+}
+
+.container .login-title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: translateY(-55%);
+    background-color: var(--bg-color);
+    padding: 0 3px;
+}
+
+.container .input-box{
+    margin-bottom: 2rem;
+    position: relative;
+}
+.container .input-box input{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    color: white;
+}
+.container .input-box input:focus, .container .input-box input:valid{
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.container .input-box label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    transition: 0.5s;
+}
+.container .input-box input:focus + label, .container .input-box input:valid + label{
+    top: 0;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 0.8rem;
+    background-color: var(--bg-color);
+    padding: 0 2px;
+}
+.container .input-box .see-password{
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.container .gender-box{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: white;
+}
+.container .gender-box label{
+    margin: 0 1rem 0 0.5rem;
+}
+.container .tnc-box{
+    margin: 1rem 0;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.container .submit-box{
+    width: 50%;
+    margin: 0 auto 2rem;
+}
+.submit-box input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    border: 2px solid var(--bg-color);
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+}
+.submit-box input:hover{
+    border: 2px solid white;
+    background-color: var(--bg-color);
+    color: white;
+}
+.container form .forget-pwd-box{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.9rem;
+}
+.container form .forget-pwd-box a{
+    color: white;
+    text-decoration: underline;
+}
+
+/* ----------------------- Media Query ----------------------- */
+
+@media (max-width: 767px){
+    .container{
+        height: 100%;
+        padding: 2rem 0;
+    }
+    .container .signup-form{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+
+@media (max-width: 389px){
+    .container form{
+        padding: 3rem 0.5rem 1rem;
+    }
+    .container .gender-box{
+        flex-direction: column;
+    }
+    .container .tnc-box{
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+
