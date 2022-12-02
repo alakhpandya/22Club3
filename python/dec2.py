@@ -50,8 +50,8 @@ print("l1 =", l1)
 # l1.sort(reverse=True)
 # print("l1 =", l1)
 
-# l1.reverse()
-# print("l1 =", l1)
+l1.reverse()
+print("l1 =", l1)
 
 
 # Next Class: Operators in Python, decision making, loops, remaining collections
