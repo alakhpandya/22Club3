@@ -24,3 +24,27 @@ output: Keep_yourself mute while not#speaking.
 6. Ask 10 numbers from the user and store them in a list. Now, ask user to enter a number between 1 to 10. Delete the element present at that index number and print the list. Now aks user to enter the number that he/she wants to delete. Delete that number itself from the list and print the resultant list.
 
 """
+# 1.
+'''
+full_name = input("Enter your full name:")     # Alakh Janankkumar Pandya
+first_letter = full_name[0]
+first_space_index = full_name.index(" ")
+second_letter = full_name[first_space_index + 1]
+last_space_index = full_name.rindex(" ")
+surname = full_name[last_space_index + 1 : ]
+short_name = first_letter + "." + second_letter + "." + surname
+print(short_name)
+'''
+# 3.
+'''
+input_string = input("Enter a sentence: ")
+temp = input_string.replace('the ', '')
+print(temp.replace('The ', ''))
+'''
+# 4.
+input_string = input("Enter a sentence: ")
+temp = input_string.replace(" ", "_", 1)
+temp = temp[::-1]
+temp = temp.replace(' ', '#', 1)
+temp = temp[::-1]
+print(temp)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hide-it">Extra Title</h1>
+    <!-- in-line js -->
+    <a href="#" onclick="document.getElementById('hide-it').style.display = 'none'">Hide it!</a>
+
+    <p id="show-text"></p>
+    <button id="show-btn">Show hidden text</button>
+</body>
+<!-- internal js -->
+<script>
+    // const show_btn = document.getElementById('show-btn');
+    // const show_text = document.getElementById('show-text');
+
+    // show_btn.addEventListener('click', ()=>{
+    //     show_text.innerText = 'I am the hidden text!';
+    // })
+</script>
+<!-- External js -->
+<script src="/dec8.js"></script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <!-- <button onclick="document.write('Hello World!')">Show</button> -->
+</body>
+<!-- Internal JS -->
+<script>
+    // 'use strict';
+    const h1 = document.getElementById('title')
+    h1.innerText = 'Hello World!'
+
+    // window.alert('Hello World!')
+
+    // window.print();
+
+    console.log('Hello World!'); console.log('Hello Khush!')
+/*
+    a = 5;
+    b = 10;
+    c = a + b;
+*/
+// or
+    // a = 5; b = 10; c = a + b;
+    // console.log(c);
+
+
+    // creating variables using 'var'
+    var a = 37, b = 10, c;
+    a = 5;
+    c = a + b;
+/*
+    d = 20;
+
+    var d;
+*/
+
+    var a = 17;
+
+    // creating variables using 'let'
+    let e, f, g = 50;
+
+    // let e = 7;
+    g = 51;
+
+    h = 100;
+
+    // let h;
+    // let a;
+    // var vs. let:
+    /*
+    var:
+        variables created using var can be redeclared.
+        variables created using var has global scope.
+    let:
+        variables created using let cannot be redeclared.
+        variables created using let has local scope.
+    */
+    let y = 500;
+    {
+        y += 1;
+        console.log(y);
+    }
+    let x = 1000;
+    {
+        // var p = 101;
+        // console.log(p);
+        let x = 200;
+        console.log(x);
+    }
+
+    // console.log(p);
+    // p += 1;
+    console.log(x);
+    x += 1;
+
+    {
+        let x = 300;
+        // p += 1;
+        // console.log(p);
+        x += 1;
+        console.log(x);
+    }
+</script>
+</html>
