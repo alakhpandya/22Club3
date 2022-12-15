@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Naming convention:
+    1. We can't start with numbers
+    2. Can use only 2 special characters: _ and $
+    */
+//    valid names:  a1 = 5, a_1 = 7, a$1 = 10
+    // invalid names: 1a = 5, a-1 = 10, a 2 = 15
+
+    // const PI = 3.1415;
+    // PI = 3.14;
+    // const e;
+    // e = 2.17;
+
+    /*
+    Operators in js:
+        1. Arithmetic Operators: +, -, *, /, %, ** (power), ++, --
+        2. Logical Operators: &&, ||, !
+        3. Type operator: typeof
+        4. Comparision/Conditional/Relational Operators/Conditions: <, >, <=, >=, ==, !=, ===, !==, ?
+        5. Assignment operators: =, +=, -=, *=, /=, %=, **=
+    */
+
+    /*
+    'use strict';
+    let a = 5, b = "5", c = 10, d = "13", e, f, g, h, i;
+    e = a + c;
+    f = b + d;
+    g = a + b;
+    h = b * 3;
+    i = Number(b);
+    */
+    /*
+    console.log("e = %d", e);
+    console.log("f = %d", f);
+    console.log("g = %d", g);
+    console.log("h = %d", h);
+    console.log(typeof(b));
+    console.log(typeof(i));
+    
+    console.log(a == b)
+    console.log(a === b)
+
+    console.log(a != b);
+    console.log(a !== b);
+    */
+    /*
+    marks = prompt('Enter your marks:');
+    marks < 35 ? console.log("Fail") : console.log("Pass")
+    */
+    
+    // Nested Ternary Operators
+    /*
+    n = prompt("Enter any number:");
+    console.log(n > 0 ? "Positive" : n == 0 ? "Zero" : "Negative");
+    */
+
+
+    // Datatypes in js
+    // numeric
+    let a = 5, b = 6.5, c = "z", d = 'abcd';
+    console.log(typeof(a));
+    console.log(typeof(b));
+    console.log(typeof(c));
+    console.log(typeof(d));
+
+    // array
+    let e = [12,13,14,15];
+    console.log(e);
+    console.log(typeof(e));
+
+    // object
+    let f = {"Maths":55, "English":79, "Computers":67}
+    console.log(f);
+    console.log(typeof(f));
+
+    // boolean
+    console.log(a < b);
+    console.log(a > b);
+
+    // undefined
+    let g;
+    console.log(typeof(g));
+
+    // null
+    let h = null;
+    console.log(typeof(h));
+</script>
+</html>

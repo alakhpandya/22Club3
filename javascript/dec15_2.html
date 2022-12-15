@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Strings
+    // let a = 'I don't mind'       Error
+    let a = 'I don\'t mind.';
+    let b = "Neither you."
+    /*
+    console.log(a.length);
+    console.log(a[3]);
+    // console.log(a[-3]);
+    console.log(a.slice(2, -2));
+    console.log(a.slice(2));
+    console.log(a.slice(-2));
+    */
+   console.log(a.substring(2, 7));     // substring does not take -ve indexing
+
+   // console.log(a.substr(2, 7));
+
+   console.log(a.indexOf('i'));
+   console.log(a.indexOf('n'));
+   console.log(a.lastIndexOf('n'));
+
+   console.log(a.charAt(8))
+   console.log(a.charCodeAt(8))
+
+//    a = a.replace('mind', 'have brain');
+//    console.log(a);
+
+    console.log(a.toUpperCase())
+    console.log(a.toLowerCase())
+
+    console.log(a.concat(b))
+
+    let c = '                                  Hello           ';
+    console.log(c.trim());
+    console.log(c);
+
+    let d = '7';
+    console.log(d.padStart(3, '0'));
+    console.log(d.padEnd(4, 'is'));
+</script>
+</html>
