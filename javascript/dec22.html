@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // if - else:
+    /*
+    let marks = 15;
+    if (marks > 35){
+        console.log("Pass...");
+    }
+    else if (marks == 35){
+        console.log("Mand mand pass...");
+    }
+    else{
+        console.log("Fail...");
+    }
+    */
+    let a = 10, b = 20;
+    let op = prompt("Enter operation (+, -, * or /)");
+    // console.log(op);
+    // console.log(typeof(op));
+
+    switch(op)
+    {
+        case "+":
+            console.log(a + b);
+            break;
+        case "-":
+            console.log(a - b);
+            break;
+        case "*":
+            console.log(a * b);
+            break;
+        case "/":
+            console.log(a / b);
+            break;
+        default:
+            console.log("Invalid operation...");
+    }
+
+    /*
+    1. Categorize the person
+    Problem Description
+    Write a program to input from the user a float value(A) representing the height of person. You have to print the category of that person.
+
+    If the height is greater than or equal to 195 then that person is "abnormal".
+    If the height is in the range of [165 -195) then that person is "taller".
+    If the height is in the range of [150 -165) then that person is "average".
+    If the height is smaller than 150 then that person is a "dwarf".
+
+
+    2. Write a C program to accept a coordinate point in a XY coordinate system and determine in which quadrant the coordinate point lies.
+    Enter x coordinate: 7
+    Enter y coordinate: 9
+    Expected Output :
+    The coordinate point (7,9) lies in the First quadrant.
+    
+    3. Write a C program to find the eligibility of admission for a professional course based on the following criteria:
+    Eligibility Criteria : 
+    Marks in Maths >=65 and 
+    Marks in Phy >=55 and 
+    Marks in Chem>=50 and 
+    Total in all three subject >=190 or Total in Maths and Physics >=140 ------------------------------------- 
+    Enter the marks obtained in Physics :65 Input the marks obtained in Chemistry :51 Input the marks obtained in Mathematics :72 Total marks of Maths, Physics and Chemistry : 188 Total marks of Maths and Physics : 137 The candidate is not eligible.
+    Expected Output :
+    The candidate is not eligible for admission.
+
+    4. Write a program to print whether the roots of a quadratic equation are two real roots, unique or imaginary.
+    if the quadratic equation is: (a*x^2) + b*x + c = 0 then the two roots are real if square root of (b^2 - 4*a*c) > 0. If (b^2 - 4*a*c) = 0 then there is unique root and if (b^2 - 4*a*c) < 0 then the roots are imaginary. Ask values of a, b & c from user and print the appropriate answer.
+    */
+</script>
+</html>
