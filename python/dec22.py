@@ -2,7 +2,7 @@
 """
 1. Write a Python code that takes an integer from user and prints number of digits in that integer.
 2. Write down a Python code that creates a user defined list
-3. Write a Python code to print each of the elements of a given list in a new line
+3. Write a Python code to prin each of the elements of a given list in a new linet
 4. Write a Python program that prints whether the number given is a prime number or not.
 5. Write a Python program that prints whether the number given is a perfect number or not.
 6. Write a Python program that prints whether the number given is an Armstrong number or not.
