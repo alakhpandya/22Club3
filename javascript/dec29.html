@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    4. Write a program to print whether the roots of a quadratic equation are two real roots, unique or imaginary.
+    if the quadratic equation is: (a*x^2) + b*x + c = 0 then the two roots are real if square root of (b^2 - 4*a*c) > 0. If (b^2 - 4*a*c) = 0 then there is unique root and if (b^2 - 4*a*c) < 0 then the roots are imaginary. Ask values of a, b & c from user and print the appropriate answer.
+    
+   let a = prompt("Enter a:");
+   let b = prompt("Enter b:");
+   let c = prompt("Enter c:");
+
+   let d = (b * b) - (4 * a * c);
+   if (d > 0){
+        console.log("Two real roots.");
+   }
+   else if(d == 0){
+        console.log("Unique root.");
+   }
+   else{
+        console.log("Imaginary roots.");
+   }
+     */
+
+     // Arrays
+     // let myArray = ["Max", "Ajio", "H&M", "Myntra", "Zudio", 3, -56, 3.6, 0];
+
+     // Accessing through index
+     /*
+     console.log(myArray[3]);
+     console.log(myArray.length);
+     myArray[5] = 9;
+     console.log(myArray);
+   */
+     // Nested Arrays
+   /*
+     let yourArray = [
+          ["Bata", "Reebok", "Adidas", "Puma"],
+          ["Knighthood", "Raymond", "Lee", "Cooper"],
+          [
+               [2, 4, 6],
+               [-5, -13.6, 5],
+               [0, 3, 7]
+          ],
+          ["BMW", "Merc", "Toyota", "Hundai", "Maruti", "Tata"]
+     ];
+     // console.log(yourArray);
+     console.log(yourArray[0]);
+     console.log(yourArray[1][2]);
+     console.log(yourArray[2][1][2]);
+     */
+
+     let myArray = ["Max", "Ajio", "H&M", "Myntra", "Zudio", 3, -56, 3.6, 0];
+     /*
+     myArray.push("Zara");
+     console.log(myArray);
+
+     let removed_element = myArray.pop();
+     console.log(myArray);
+     console.log(removed_element);
+
+     removed_element = myArray.shift();
+     console.log(myArray);
+     console.log(removed_element);
+
+     myArray.unshift("LV");
+     console.log(myArray);
+     */
+     // delete myArray[3];
+     
+     myArray.pop();
+     console.log(myArray);
+</script>
+</html>
