@@ -50,6 +50,7 @@ slicing with +ve & -ve index and with +ve/-ve step
 t2 = 43, -606, 98.5, 0, 39.9, "Bootcamp", "Laptop"
 print(t2)
 print(type(t2))
+# t2[2] = 1000      Not allowed
 
 t3 = 43, -606
 print(t3)
@@ -83,7 +84,7 @@ t1 = (12, 13, 45, -32.7, 13, 9.9, 0, 13, 24.6, 13)
 
 # fruits = ["apple", "mango", "kiwi", "banana", "strawberry", "orange"]
 # f = input("Enter any fruit name: ")
-# Start writing your code from here
+# Start writing your code from here 
 
 
 # Next Class: Unpacking of collections/Multiple Assignment
