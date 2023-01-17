@@ -72,6 +72,22 @@ s1 = {15, 7, -17, 0.78, 6, 18, 15.47, 98.2, 0}
 s2 = s1.copy()
 s3 = s1
 
+# print("s1 =", s1)
+# print("s2 =", s2)
+# print("s3 =", s3)
+
+# s1.discard(15.47)
+# s1.discard(15.47)
+# print("s1 =", s1)
+# s1.remove(98.2)
+# s1.remove(98.2)
+# print("s1 =", s1)
+
+# print(s1.pop())
+
+s2 = {101, 201, 301, 401, 6}
+s1.update(s2)
+print("length of s1 =", len(s1))
 print("s1 =", s1)
 print("s2 =", s2)
-print("s3 =", s3)
+

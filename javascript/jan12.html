@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    let bollywood_hero = {
+        hat : 'Blue',
+        legs : 2,
+        "T Shirt" : 'Yellow',
+        'Neck-Tie' : "Red",
+        "2Shoes" : 'Black & Orange',
+        "Trousers" : "Green",
+        wrist_watch : 'Golden'
+    }
+    */
+    // console.log(bollywood_hero.hasOwnProperty("hat"));
+    // console.log(bollywood_hero.hasOwnProperty("horn"));
+    /*
+    Write a js function that takes an object & a property as arguments, and print the value of the property if it exists in the object. If it doesn't, then prints "This property does not exist."
+    */
+
+    /*
+    let myDog = {
+        legs: 4,
+        tail: 1,
+        sound: "bark",
+        friend: "Everyone"
+    }
+
+    function getProperty(obj, prop){
+        // write your code here
+        if (obj.hasOwnProperty(prop)) 
+        {
+            console.log(obj[prop]);
+        }
+        else
+        {
+            return ("This property does not exist")
+        }
+
+    }
+
+    getProperty(bollywood_hero, "hat");     // output: Blue
+    getProperty(bollywood_hero, "horn");    // output: This property does not exist.
+    getProperty(myDog, "sound");
+    */
+
+    // Nested Objects
+    // let myHome = {
+    //     entry : "Eastward",
+    //     drawing_room : 1,
+    //     "my room" : {
+    //         table : 1,
+    //         mirror : "huge",
+    //         wardrobe : "not mine",
+    //         cupboard : {
+    //             "general area" : "Photo Albums",
+    //             "inner locker" : "money"
+    //         }
+    //     }
+    // }
+
+    // console.log(myHome.myRoom.cupboard["inner locker"]);
+    // console.log(myHome["my room"]["cupboard"]["inner locker"]);
+
+    // Complex Objects
+
+    /*
+    let myDog = {
+        name: "Frisky",
+        legs: 4,
+        tail: 1,
+        sound: "bark",
+        friend: ["Alakh", "Khush", "Dharmangi"]
+    }
+
+    console.log(myDog.friend[2]);
+
+    let myHome = {
+        myRoom : ["bed", "mirror", {
+            cupboard : {
+                "outer part" : ["Photo Albums", "books", "Party wears"],
+                "inner locker" : "money"
+            },
+            wardrobe : "mess"
+        }]
+    }
+
+    console.log(myHome.myRoom[2].cupboard["outer part"][0]);
+    console.log(myHome["myRoom"][2]["cupboard"]["outer part"][1]);
+    */
+
+    let myCollections = [
+        {
+            "artist":"2 unlimited",
+            "title":"no limit",
+            "release_year":1991,
+            "formats":[
+                "cassate",
+                "cd",
+                "mp3",
+                "youtube"
+            ],
+            "genre":"rap"
+        },
+
+        {
+            "artist":"Kungs",
+            "title":"this girl",
+            "release_year":2016,
+            "formats":[
+                "mp3",
+                "youtube"
+            ],
+            "genre":"remix"
+        }
+    ]
+
+    // write a code to access 'cassate' format of artist '2 unlimited'.
+</script>
+</html>
