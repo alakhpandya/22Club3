@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    let alphabets = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    let str = prompt("Enter string:");    // apz
+    let shift = Number(prompt("Shift:"))                // 3
+    // output: dsc
+    var coded_str = "";
+    var character_index, coded_alphabet;
+    for(let i = 0; i < str.length; i++){
+        if(str[i] != " "){
+            character_index = (alphabets.indexOf(str[i]) + shift) % 26;
+            if (character_index >= 0){
+                coded_alphabet = alphabets[character_index];
+                // console.log(coded_alphabet);
+            }
+            else{
+                coded_alphabet = alphabets[26 + character_index];
+            }
+        }
+        else{
+            coded_alphabet = " ";
+        }
+        coded_str += coded_alphabet;
+    }
+    console.log(coded_str);
+    
+</script>
+</html>
