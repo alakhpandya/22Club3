@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    for(let i=0; i<20; i++){
+        console.log(Math.random());     // gives a random number in the interval [0, 1)
+    }
+    */
+
+    // Math Module
+    /*
+    // Give me a program that prints 20 random numbers in the interval [5, 15)
+    let num;
+    for(let i=0; i<20; i++){
+        num = Math.random();
+        num = num * 10;
+        num = num + 5;
+        // console.log(num);
+    }
+     
+    // Give me a program that prints 20 random numbers in the interval [a, b) where a & b tobe taken from user.
+
+    console.log(Math.floor(12.9));
+    console.log(Math.ceil(12.1));
+    
+
+    // Give me a program that prints 20 random integers in the interval [a, b) where a & b tobe taken from user.
+
+    console.log(Math.E);
+    console.log(Math.PI);
+    */
+
+    // Some useful built in functions
+    // parseInt & parseFloat
+    /*
+    let a = "23.7";
+    console.log(typeof(a));
+    console.log(typeof(parseFloat(a)));
+    console.log(a);
+    console.log(parseFloat(a));
+
+    let b = "101";
+    console.log(b);
+    console.log(Number(b));
+    console.log(parseInt(b, 2));
+    */
+
+    // map, filter, reduce
+    // Write a function that finds factorial of an integer. Write a main program that passes each integer of an array to that function & creates another array made up of factorials of those numbers. Log the factorial array on the console.
+    /*
+    function factorial(n){
+        // Part-1 of your code
+    }
+
+    let sampleArray = [2, 3, 5, 1, 7, 4, 0, 6];
+    let factorialArray = [];
+    // Part-2 of your code
+
+    console.lgo(factorialArray);
+    // Output: 2 6 120 1 5040 24 1 720
+    */
+    /*
+    function factorial(n){
+        let f = 1;
+        for(i = 1; i <= n; i++){
+            f *= i;
+        }
+        return f;
+    }
+
+    let sampleArray = [2, 3, 5, 1, 7, 4, 0, 6];
+    let factorialArray = sampleArray.map(factorial);
+    console.log(factorialArray);
+
+    // We can provide only functions as argument of map, not any formula directly
+    // That function MUST TAKE EXACTLY 1 Argument.
+    // That function must return something.
+    */
+
+    // Write a function that returns the average of the temperatures of the array sensorData. Use that function and create another array that contains the temparatures which are higher than the average.
+    function average(testArray){
+        // Part-1 of your code goes here
+    }
+    
+    let sensorData = [34, 607, 109, 22, 11.5, 5.9, 18.57, 98, 203, 0, -8];
+    let highTemperaturePoints = [];
+    // Part-2 of your code goes here
+
+
+    console.log(highTemperaturePoints);
+
+</script>
+</html>
