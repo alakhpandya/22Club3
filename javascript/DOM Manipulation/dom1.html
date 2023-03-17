@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic html of a web for js</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;  
+        box-sizing: border-box ;
+    }
+    body{
+        background:linear-gradient(to bottom,rgb(30, 5, 72),rgb(127, 83, 203)) ;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: red solid; */
+        height: 100vh;
+        font-family: sans-serif;
+    }
+    .container{
+        border: 2px solid white;
+        width: fit-content;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 1rem ;
+    }
+    .movie_list{
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+    .movie_name{
+        background-color: white;
+        color: black;
+        margin-bottom: 2px;
+        font-size: 1.3rem;
+        padding: 0.6rem 0;
+    }
+    .title{
+        margin-bottom : 2rem;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 class="title">Favourite Movie Franchise</h1>
+        <ul class="movie_list">
+            <li id="matrix" class="movie_name">The Matrix</li>
+            <li class="movie_name">Star Wars</li>
+            <li class="movie_name">Harry Potter</li>
+            <li class="movie_name">Lord of the Rings</li>
+            <li class="movie_name">Marvel</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // DOM: Document Object Model
+    
+    // Selectors in js
+
+    // selecting by id:
+    // var matrix = document.getElementById('matrix');
+    // matrix.style.backgroundColor = 'red';
+
+    // selecting by class:
+    // let all_movies = document.getElementsByClassName('movie_name');
+    // console.log(all_movies);
+    // let movie_list = document.getElementsByClassName('movie_list');
+    // console.log(movie_list);
+    // movie_list[0].style.backgroundColor = 'red';
+
+
+    // selecting by tag name:
+    // const movies_array = document.getElementsByTagName('li');
+    // console.log(movies_array);
+    // const container = document.getElementsByTagName('div');
+    // console.log(container);
+
+
+    // query selector
+    // const li = document.querySelector('li');
+    // console.log(li);
+
+    // const container = document.querySelector('.container');
+    // console.log(container);
+
+    // const matrix = document.querySelector('#matrix');
+    // console.log(matrix);
+
+
+    // query selector all
+    const li = document.querySelectorAll('li');
+    const movie_list = document.querySelectorAll('.movie_list');
+    const matrix = document.querySelectorAll('#matrix');
+    console.log(li);
+    console.log(movie_list);
+    console.log(matrix);
+</script>
+</html>
