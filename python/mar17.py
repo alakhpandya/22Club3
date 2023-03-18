@@ -33,3 +33,82 @@ User can:-
 ◆LOGOUT will exit the user from the program
 You should use these functions in your program: login(), deposit(), withdraw(), checkBalance()
 """
+
+# p = """
+# Comments
+# """
+# a = 5
+# b = 5.5
+# c = "myString"
+# print(p)
+
+# Comments
+# myString = """I don't care what "others" say about me."""
+# yourString = 'Dharmangi is a good girl.\nShe studies Diploma.'
+# print(myString)
+# print(yourString)
+
+# ourString = '''He registered in all of the competitions he featured in: 312 in LaLiga, 105 in the Champions League, 22 in the Copa del Rey, six in the Club World Cup, four in the Spanish Super Cup and two in the UEFA Super Cup.
+
+# Nobody throughout the club's history has scored as many goals as the Portuguese attacker, who boasts an impressive trophy haul as a Real Madrid player: four Champions League crowns, three Club World Cups and UEFA Super Cups apiece, two LaLiga titles, a pair of Copas del Rey and two Spanish Super Cups.'''
+# print(ourString)
+
+
+# Docstrings
+'''
+def average(a,b,c,d,e):
+    # f = 5
+    """This function returns average of 5 floating point numbers"""
+    return (a+b+c+d+e)/5
+
+
+import random
+
+print(random.uniform.__doc__)
+# random.random()
+print(average.__doc__)
+'''
+
+# We put () after a function if & only if we want to call it.
+"""
+def myFunc():
+    '''Docstring'''
+    return "Hello World!"
+
+# "hello".capitalize()
+# print(myFunc.__doc__)
+
+# deleting a function
+# del myFunc
+# myFunc()
+yourFunc = myFunc
+del myFunc
+print(yourFunc())
+"""
+
+# Positional, Default
+"""
+def func1(a, b, c = 6):
+    return a**2 + b**2 + c**2
+
+print(func1(3, 5, 4))
+"""
+# Variable length arguments
+"""
+def avg(*args):
+    print(sum(args)/len(args))
+
+avg(10, 20, 30, 40, 55)
+"""
+
+# Passing collections to a function
+def func2(m, n):
+    print(m + n)
+
+myList = [1,2,34,5,6,7]
+yourList = [9,8,7,6,5,4]
+func2(myList, yourList)
+func2(5,7)
+func2("5","7")
+
+# Upcoming topics: key-word arguments, lambda functions, nesting of functions, passing functions as argument, scope of a variable- local variables, global variables & global keyword, Positional, Recursive functions
