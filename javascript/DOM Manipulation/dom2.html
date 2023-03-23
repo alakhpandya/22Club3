@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic html of a web for js</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;  
+        box-sizing: border-box ;
+    }
+    body{
+        background:linear-gradient(to bottom,rgb(30, 5, 72),rgb(127, 83, 203)) ;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: red solid; */
+        height: 100vh;
+        font-family: sans-serif;
+    }
+    .container{
+        border: 2px solid white;
+        width: fit-content;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 1rem ;
+    }
+    .movie_list{
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+    .movie_name{
+        background-color: white;
+        color: black;
+        margin-bottom: 2px;
+        font-size: 1.3rem;
+        padding: 0.6rem 0;
+    }
+    .title{
+        margin-bottom : 2rem;
+    }
+    #myFavouriteMovies{
+        background-color: orangered;
+    }
+    .bold-fonts{
+        font-weight: 900;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 class="title">Favourite Movie Franchise</h1>
+        <ul class="movie_list" width="500px">
+            <li id="matrix" class="movie_name">The Matrix</li>
+            <li class="movie_name">Star Wars</li>
+            <li class="movie_name">Harry Potter</li>
+            <li class="movie_name">Lord of the Rings</li>
+            <li class="movie_name">Marvel</li>
+        </ul>
+    </div>
+</body>
+<script>
+    /*
+    let first_movie = document.getElementById('matrix');
+    console.log(first_movie);
+    first_movie.style.backgroundColor = 'magenta';
+    first_movie.style.fontSize = '32px';
+
+    let x = document.getElementsByClassName('movie_name');
+    // x.style.backgroundColor = 'green';
+    for(let i = 0; i < x.length; i++){
+        x[i].style.backgroundColor = 'green';
+        x[i].style.color = 'white';
+    }
+    */
+
+
+    // Creating element
+    let new_movie = document.createElement('li');
+    let ul = document.querySelector('ul');
+    new_movie.innerText = "Bahubali";
+    ul.appendChild(new_movie);
+
+    // getAttribute, setAttribute
+    console.log(ul.getAttribute('class'));
+    console.log(ul.getAttribute('width'));
+    console.log(ul.getAttribute('id'));
+    ul.setAttribute('id', 'myFavouriteMovies');
+    // console.log(ul.getAttribute('id'));
+    new_movie.setAttribute('class', 'movie_name');
+
+    ul.removeAttribute('id');
+    // new_movie.setAttribute('class', 'bold-fonts');
+
+    // classlist
+    console.log(new_movie.classList);
+    new_movie.classList.add('bold-fonts');
+    new_movie.classList.remove('movie_name');
+
+    // Removing an element:
+    let remove_movie = document.getElementById('matrix');
+    remove_movie.remove();
+</script>
+</html>
