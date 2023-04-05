@@ -41,7 +41,10 @@ print(factList)
 
 # Write a function here, that returns True or False based on whether the number given in its argument is Prime or not.
 
-num_list = [x for x in range(55, 155)]
+# num_list = [x for x in range(55, 155)]
+num_list = []
+for x in range(55, 155):
+    num_list.append(x)
 
 # Write additional code here that uses that function
 
