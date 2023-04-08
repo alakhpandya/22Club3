@@ -31,7 +31,7 @@ def primeCheck(n):
 
 # avg = lambda a, b : (a + b)/2
 
-
+from functools import reduce
 
 def absoluteSum(a, b):
     # Write a function here that takes two arguments and add them but, before addition it converts both the numbers in positive.
@@ -42,5 +42,11 @@ transactions = [1000, -300, -200, 500, -20, 15, -900, 100, -20]
 # print(sum(transactions))
 
 # write a program that uses above function and finds total transcted amount.
+
+# amount = 0
+# for i in transactions:
+#     amount = absoluteSum(amount, i)
+
+amount = reduce(absoluteSum, transactions)
 
 print(amount)
