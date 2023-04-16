@@ -1,14 +1,34 @@
+# Memoization - Explicit
+"""
+#termNo : term
+{
+    1 : 1,
+    2 : 1,
+    3 : 2,
+    4 : 3,
+    5 : 5,
+    6 : 8
+}
+"""
+memory = {}
 def fibo(n):
-    if n==1 or n==2:
+    # if n in memory.keys():
+    if n in memory:
+        return memory[n]
+    if n == 1 or n == 2:
+        memory[n] = 1
         return 1
     else :
-        return fibo(n-1) +fibo(n-2)
+        term = fibo(n-1) +fibo(n-2)
+        memory[n] = term
+        return term
 
 n=int(input("How many term you want"))
 print("sr.no\tterm ")
 for i in range(1,n+1):
     print(f"{i}\t{fibo(i)}")
 
+print(memory)
 # HW: To be submitted to: dishantshah1417@gmail.com on or before 4:00pm 14th April, 2023, Friday.
 """
 1. Problem Description: Given a name A as input. Print "Hello A", where A is the name in input.
