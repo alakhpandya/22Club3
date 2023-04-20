@@ -93,7 +93,18 @@
     const showHideBtn = document.querySelector('.Reveal-box');
     const text = document.querySelector('.complementry_text');
     showHideBtn.addEventListener('click', () => {   
-
+        // text.classList.toggle('hide');
+        if (text.classList.contains('hide')){
+            text.classList.remove('hide');
+            showHideBtn.innerText = 'Hide';
+        }
+        else{
+            text.classList.add('hide');
+            showHideBtn.innerText = 'Reveal';
+        }
     })
+    // console.log(text.classList.contains('hide'));
+
+
 </script>
 </html>
