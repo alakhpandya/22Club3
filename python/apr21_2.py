@@ -49,8 +49,7 @@ Ask an integer from user and print "Yes" if it is divisible by both 3 & 5. Other
 """
 1. Numerical Derivative
 Problem Description:
-The derivative of a function is a value that tells us how much the output of a mathematical function would change, if we were to make a very, very tiny change in its input. In mathmetical terms, the limit definition of a derivative is defined as: limo Where x and hare both inputs to the h
-function f. You can safely ignore the lim part in the expression.
+The derivative of a function is a value that tells us how much the output of a mathematical function would change, if we were to make a very, very tiny change in its input. In mathmetical terms, the limit definition of a derivative is defined as: lim Where x and h are both inputs to the function f. You can safely ignore the lim part in the expression.
 Given the values of x and your task is to evaluate the expression for the function f(x) = 3x² + 2 and print the value obtained.
 
 Input Format:
@@ -216,6 +215,6 @@ c.	False
 
 """
 
-
-
 # Next Lecture- Some useful built in modules
+marks = int(input("Marks: "))
+print(marks >= 70)
