@@ -1,0 +1,3 @@
+import math
+
+dir(math)
