@@ -121,12 +121,12 @@
     C)	Below Freezing
     D)	Error
 """
-from sys import getsizeof
-l1 = [x for x in range(1, 101)]
-squares = map(lambda n : n ** 2, l1)
-# print(getsizeof(squares))
-for x in squares:
-    print(x, end=", ")
+# from sys import getsizeof
+# l1 = [x for x in range(1, 101)]
+# squares = map(lambda n : n ** 2, l1)
+# # print(getsizeof(squares))
+# for x in squares:
+#     print(x, end=", ")
 
 """
 1.	Class Performance 2
@@ -160,8 +160,7 @@ for x in squares:
     is better hence False is printed.
 
     Explanation 2:-
-    The average marks of class A is(54 + 61)/2 = 57.5, and the average of class B is(80 + 27)/2 = 53.5, so class B's average
-    is better hence True is printed.
+    The average marks of class A is(54 + 61)/2 = 57.5, and the average of class B is(80 + 27)/2 = 53.5, so class A's average is better hence True is printed.
 
 2.	Min of two
     Problem Description
@@ -192,7 +191,7 @@ for x in squares:
 
 3.	All correct about x
     You have been given the following piece of code. Assume that x has already been declared.
-
+    
     if x > 2:
         x = x*2
     if x > 4:
@@ -219,7 +218,6 @@ for x in squares:
     C.	5
     D.	Error
 
- 
 5.	Guide the coordinate
     Problem Description
     Given the (x, y) coordinates of a point on a 2D plane, write a program that transforms these coordinates according to the conditions given below.
@@ -240,4 +238,7 @@ for x in squares:
 
 
 # Next Class: time, timeit, datetime modules
-
+m = int(input())
+if m == 1: print("January")
+elif m == 2: print("February")
+else: print("December")
