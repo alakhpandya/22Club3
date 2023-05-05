@@ -42,13 +42,27 @@
 
 <body>
     <div>
-        <p>Football</p>
-        <p>Basketball</p>
-        <p>Boxing</p>
-        <p>Tennis</p>
-        <p>Golf</p>
-        <p>rugby</p>
+        <p class="sport">Football</p>
+        <p class="sport">Basketball</p>
+        <p class="sport">Boxing</p>
+        <p class="sport">Tennis</p>
+        <p class="sport">Golf</p>
+        <p class="sport">rugby</p>
     </div>
 </body>
+<script>
+    const box = document.querySelector('div');
 
+    box.addEventListener('click', (e) => {
+        // console.log(e);
+        // console.log(e.target);
+        // e.target.style.backgroundColor = "Yellow";
+        if (e.target.classList.contains('sport')){
+            e.target.style.backgroundColor = 'red';
+        }
+        else{
+            e.target.style.backgroundColor = 'yellow';
+        }
+    })
+</script>
 </html>

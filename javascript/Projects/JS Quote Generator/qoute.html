@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        font-family: sans-serif;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    img {
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+        position:absolute;
+    }
+    .text-cnt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 7rem;
+        padding: 4rem;
+    }
+    .heading {
+        background: #000;
+        color: white;
+        border: 2px solid white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 1.5rem;
+        font-weight: 100;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 0.6rem 1.5rem;
+    }
+    .quote-cnt{
+        font-weight: 100;
+        color:rgba(0, 0, 0, 0.566);
+        background-color: white;
+        border-radius: 1rem;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        padding: 2.5rem 3.5rem;
+        font-size: large;
+    }
+    .quote-cnt>p{
+        margin-bottom: 2rem;
+    }
+    .author{
+        color: rgba(128, 0, 0, 0.812);
+        letter-spacing: 0.4rem;
+        font-size: larger;
+    }
+    .button{
+        background-color: #000;
+        color: white;
+        font-weight:lighter;
+        font-size: 1rem;
+        padding: 0.4rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <img src="books_bg.jpg" alt="">
+    <div class="text-cnt">
+        <p class="heading">Javascript Quote Generator</p>
+        <div class="quote-cnt">
+            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quod pariatur inventore cumque
+                cupiditate aspernatur."</p>
+            <p class="author">AUTHOR NAME</p>
+            <button class="button">New Quote</button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

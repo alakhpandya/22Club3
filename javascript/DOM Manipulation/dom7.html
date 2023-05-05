@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        /* margin:0 4rem; */
+        padding-top: 5rem;
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        background:linear-gradient(to bottom,rgb(1, 23, 55),rgba(41, 69, 112, 0.797));
+    }
+    .container{
+        margin:0 15rem;
+        border: 5px solid white;
+        border-radius: 1rem;
+        height: 35rem;
+        /* padding-top: 2rem; */
+        padding: 2rem 15rem 0;
+        font-size: 4rem;
+    }
+    .container-2{
+        border: 5px solid white;
+        border-radius: 1rem;
+        margin-top: 5rem;
+        height: 20rem;
+        padding: 2rem;
+    }
+    .click{
+        margin-top: 7rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+        cursor: pointer;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>
+            2
+        </p>
+        <div class="container-2">
+            <p>1</p>
+            <p class="click">Click</p>
+        </div>
+    </div>
+</body>
+<script>
+    const link = document.querySelector('.click');
+    const inner_container = document.querySelector('.container-2');
+    const outer_container = document.querySelector('.container');
+    const body = document.querySelector('body');
+    
+    window.addEventListener('click', () => {
+        console.log('Window clicked...');
+    // }, true)
+    })
+    
+    body.addEventListener('click', () => {
+        console.log('Body clicked...');
+    // }, true)
+    })
+    
+    outer_container.addEventListener('click', (e) => {
+        console.log('Outer container clicked...');
+        e.stopPropagation();
+    // }, true)
+    })
+    
+    inner_container.addEventListener('click', () => {
+        console.log('Inner container clicked...');
+    // }, true)
+    })
+    
+    link.addEventListener('click', () => {
+        console.log('Link clicked...');
+    // }, true)
+    })
+
+</script>
+</html>
