@@ -37,4 +37,4 @@ dob = datetime.datetime(dob_year, dob_month, dob_date)
 # print(f"Your age: {aaj_ni_tarikh - dob} Days")
 
 print(dob.date())
-# Next Class: strpdate, strptime
+# Next Class: strptime, strftime

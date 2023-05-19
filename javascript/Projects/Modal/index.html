@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        /* display: flex; */
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: black;
+    }
+
+    img {
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .modal-cnt {
+        background: white;
+        width: 14rem;
+        height: 8rem;
+        padding-top: 3rem;
+        border-radius: 0.2rem;
+        text-align: center;
+        font-size: 20px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        animation-name: moveModal;
+        animation-duration: 0.5s;
+        display: none;
+    }
+
+    .exit-btn {
+        background: gray;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.2rem;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .btn {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 0.8rem 3rem;
+        border-radius: 0.4rem;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: black;
+        background: white;
+        border: none;
+    }
+
+    @keyframes moveModal {
+        from{
+            top: -8rem;
+            left: 50%;
+        }
+        to{
+            top: 50%;
+            left: 50%;
+        }
+    }
+</style>
+
+<body>
+    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg" alt="">
+    <div class="modal-cnt">
+        <span class="exit-btn">×</span>
+        <p>Here I am!</p>
+    </div>
+    <button class="btn">Where's Our Modal?</button>
+</body>
+<script>
+    // let body = document.querySelector('body');
+    let show_modal = document.querySelector('.btn');
+    let modal = document.querySelector('.modal-cnt');
+    let close_btn = document.querySelector('.exit-btn');
+    let bg_img = document.querySelector('img');
+    let target;
+
+    show_modal.addEventListener('click', () => {
+        modal.style.display = 'block';
+        bg_img.style.opacity = '0.5';
+    })
+
+    // body.addEventListener('click', (e) => {
+    window.addEventListener('click', (e) => {
+        target = e.target;
+        console.log(target);
+        if (target === close_btn || target != modal && target != show_modal){
+            modal.style.display = 'none';
+            bg_img.style.opacity = "1";
+        }
+    })
+</script>
+
+</html>
