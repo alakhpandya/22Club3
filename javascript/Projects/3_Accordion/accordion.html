@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        min-height: 100vh;
+        background-image: url("https://cdn.pixabay.com/photo/2018/04/13/11/17/paper-3316269_1280.jpg");
+        background-size: 100%;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .cnt {
+        background-color: white;
+        margin: 0 10rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        height: fit-content;
+        font-size: 26px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .inner-cnt{
+        text-align: left;
+        margin-bottom: 1rem;
+        line-height: 2.5rem;
+        height: 4rem;
+        overflow: hidden;
+        margin-top: 1.8rem;
+        transition: 0.3s;
+    }
+    .show{
+        height: 13rem;
+    }
+    .question{
+        display: flex;
+        justify-content: space-between;
+    }
+    .question>p{
+        font-size: 25px;
+    }
+    hr{
+        margin: 1rem 0.2rem;
+        color: black;
+        background-color: black;
+        height: 3px;
+    }
+    .close-btn{
+        cursor: pointer;
+        padding: 0 1.2rem;
+        background-color: rgb(165, 165, 165);
+        border-radius: 5px;
+    }
+    .close-btn:hover{
+        background-color: rgb(204, 203, 203);
+    }
+</style>
+
+<body>
+    <div class="cnt">
+        <h1>Frequently Asked Questions</h1>
+        <div class="inner-cnt">
+            <div class="question">
+                <p>What is the return policy?</p>
+                <p class="close-btn">+</p>
+            </div>
+            <hr>
+            <p class="inner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, illo praesentium.
+                Excepturi
+                labore veniam saepe ducimus quos quod doloremque delectus optio! Quibusdam ex
+                quaerat at nobis in necessitatibus laudantium odio.
+            </p>
+        </div>
+        <div class="inner-cnt">
+            <div class="question">
+                <p>What is the return policy?</p>
+                <p class="close-btn">+</p>
+            </div>
+            <hr>
+            <p class="inner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, illo praesentium.
+                Excepturi
+                labore veniam saepe ducimus quos quod doloremque delectus optio! Quibusdam ex
+                quaerat at nobis in necessitatibus laudantium odio.
+            </p>
+        </div>
+        <div class="inner-cnt">
+            <div class="question">
+                <p>What is the return policy?</p>
+                <p class="close-btn">+</p>
+            </div>
+            <hr>
+            <p class="inner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, illo praesentium.
+                Excepturi
+                labore veniam saepe ducimus quos quod doloremque delectus optio! Quibusdam ex
+                quaerat at nobis in necessitatibus laudantium odio.
+            </p>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
