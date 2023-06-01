@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("https://cdn.pixabay.com/photo/2020/05/30/09/53/todo-lists-5238324_1280.jpg");
+        background-size: 100%;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-cnt{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 0.7rem 1.2rem;
+        border-radius: 6px;
+        gap: 1rem;
+    }
+    input{
+        width: 25rem;
+        height: 2.2rem;
+        border: 2px solid black;
+        border-radius: 4px;
+        padding-left: 20px;
+    }
+    button{
+        padding: 0.2rem 0.8rem;
+        font-size: 1.3rem;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+</style>
+<body>
+    <div class="main-cnt">
+        <input type="text" placeholder="Enter Task...">
+        <button>+</button>
+    </div>
+</body>
+</html>

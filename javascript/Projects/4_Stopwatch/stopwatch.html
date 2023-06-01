@@ -27,7 +27,8 @@
     .main-cnt{
         background:white;
         font-size: 3rem;
-        padding: 2rem 10rem 1.3rem 10rem;
+        padding: 2rem 0 1.3rem;
+        width: 500px;
         border-radius: 1rem;
         position: absolute;
         top: 50%;
@@ -55,10 +56,22 @@
     .reset-icon{
         background-color: red;
     }
+    #timer-container{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    #timer-container span{
+        display: inline-block;
+        width: 60px;
+    }
+    #timer-container #milliseconds{
+        width: 90px;
+    }
 </style>
 <body>
     <div class="main-cnt">
-        <p id="timer-container">00:00:00:000</p>
+        <p id="timer-container"><span>00</span>:<span>00</span>:<span>00</span>:<span id="milliseconds">000</span></p>
         <div class="btn-cnt">
             <i class="fa-solid fa-play play-icon"></i>
             <i class="fa-solid fa-rotate-right reset-icon"></i>

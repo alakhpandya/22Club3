@@ -1,6 +1,6 @@
 class Car:
     seating_capacity = 5        # class variable
-
+    allCars = []
     # def __init__(self, a, b, c):
     #     self.name = a
     #     self.price = b
@@ -10,6 +10,7 @@ class Car:
         self.name = name
         self.price = price
         self.fuel = fuel
+        Car.allCars.append(self)
 
     # method
     def printDetails(self):
@@ -67,8 +68,15 @@ print(c1.__dict__)
 c4 = Car()
 """
 
-c1 = Car("Nexon EV", 1500000, "Electric")
-c2 = Car("XUV 700", 2500000, "Diesel")
-c2.seating_capacity = 7
-c3 = Car("Alto", 300000, "CNG")
+c0 = Car("Nexon EV", 1500000, "Electric")
+c1 = Car("XUV 700", 2500000, "Diesel")
+c1.seating_capacity = 7
+c2 = Car("Alto", 300000, "CNG")
+# Car.allCars.append(c0)
+# Car.allCars.append(c1)
+# Car.allCars.append(c2)
 
+# choice = int(input("car no: "))     # 1
+# Car.allCars[choice].printDetails()
+
+print(Car.allCars)

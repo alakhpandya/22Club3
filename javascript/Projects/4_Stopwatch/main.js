@@ -14,6 +14,7 @@ play_pause_btn.addEventListener('click', () => {
 let ms = 0, s = 0, min = 0, h = 0;
 let play_pause_btn = document.querySelector('.play-icon');
 let timer_container = document.getElementById('timer-container');
+let reset_btn = document.querySelector('.reset-icon');
 const stopWatch = () => {
     ms++;
     if (ms == 100){
@@ -28,6 +29,7 @@ const stopWatch = () => {
             }
         }
     }
+    timer_container.innerHTML = `<span>${h.toString().padStart(2, '0')}</span>:<span>${min.toString().padStart(2, '0')}</span>:<span>${s.toString().padStart(2, '0')}</span>:<span id="milliseconds">${ms.toString().padStart(3, '0')}</span>`;
 }
 
 play_pause_btn.addEventListener('click', () => {
@@ -41,4 +43,8 @@ play_pause_btn.addEventListener('click', () => {
         play_pause_btn.classList.add('fa-play');
         play_pause_btn.classList.remove('fa-pause');
     }
+})
+reset_btn.addEventListener('click', () => {
+    timer_container.innerHTML = `<span>00</span>:<span>00</span>:<span>00</span>:<span id="milliseconds">000</span>`;
+    h = 0; min = 0; s = 0; ms = 0;
 })
