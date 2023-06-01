@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
 </head>
 <style>
@@ -22,12 +25,12 @@
         align-items: center;
         justify-content: center;
     }
-    .main-cnt{
+    .input-container{
         background-color: white;
-        display: flex;
-        align-items: center;
         padding: 0.7rem 1.2rem;
         border-radius: 6px;
+        display: flex;
+        align-items: center;
         gap: 1rem;
     }
     input{
@@ -44,11 +47,67 @@
         border-radius: 4px;
     }
 
+    .task-container{
+        background-color: white;
+        border-radius: 6px;
+        margin-top: 1rem;
+    }
+    .show-task-container{
+        padding: 0.7rem 1.2rem;
+    }
+    .task{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .task-option-icons{
+        border: solid 1px;
+        padding: 0.25rem;
+        font-size: 1.3rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #edit-icon{
+        color: blue;
+    }
+    #edit-icon:hover{
+        background-color: blue;
+        color: white;
+    }
+    #check-icon{
+        color: teal;
+    }
+    #check-icon:hover{
+        background-color: teal;
+        color: white;
+    }
+    #trash-icon{
+        color: red;
+    }
+    #trash-icon:hover{
+        background-color: red;
+        color: white;
+    }
+
 </style>
 <body>
     <div class="main-cnt">
-        <input type="text" placeholder="Enter Task...">
-        <button>+</button>
+        <div class="input-container">
+            <input type="text" placeholder="Enter Task...">
+            <button>+</button>
+        </div>
+        <div class="task-container">
+            <!-- <div class="task">
+                <p>Create a user snippet</p>
+                <div class="edit-options">
+                    <i id="edit-icon" class="fa-solid fa-edit task-option-icons"></i>
+                    <i id="check-icon" class="fa-solid fa-check task-option-icons"></i>
+                    <i id="trash-icon" class="fa-solid fa-trash task-option-icons"></i>
+                </div>
+            </div> -->
+        </div>
     </div>
+
 </body>
+<script src="main.js"></script>
 </html>
