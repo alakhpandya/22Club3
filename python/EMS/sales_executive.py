@@ -5,10 +5,12 @@ class SalesExecutive(Employees):
     def __init__(self, name, age, gender, area):
         super().__init__(name, age, gender)
         self.area = area
+        self.generateID("S")
 
     def printDetails(self):
         super().printDetails()
         print("Target:", self.target)
+        print("-----------X-----------X-----------")
 
     @classmethod
     def addEmployee(cls):

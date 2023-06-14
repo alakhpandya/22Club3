@@ -6,11 +6,13 @@ class Manager(Employees):
     def __init__(self, name, age, gender, qualification):
         super().__init__(name, age, gender)
         self.qualification = qualification
+        self.generateID("M")
 
     def printDetails(self):
         super().printDetails()
         print("Qualification:", self.qualification)
         print("Team Size:", self.team_size)
+        print("-----------X-----------X-----------")
 
     @classmethod
     def addEmployee(cls):

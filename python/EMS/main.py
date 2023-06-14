@@ -54,4 +54,4 @@ while True:
     elif op == 5:
         pass
     elif op == 9:
-        pass
+        break
