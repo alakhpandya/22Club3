@@ -13,6 +13,10 @@ def printTitle():
 
 printTitle()
 
+e1 = Peon("Sohan", 25, "M")
+e2 = Manager("Rohan", 23, "M", "PGDBA")
+e3 = GeneralManager("Dhruvi", 30, "F", "MTech")
+
 while True:
     print("\nPress\n1 to see all details of employees:")
     print("2 to Add new employees:")
@@ -43,7 +47,8 @@ while True:
 
     elif op == 3:
         Employees.allEmployees()
-        choice = int(input("Enter sr no of the car you want view details of: "))
+        choice = input("Enter ID of the employee: ")        # id: 2303M101  => 1, 157 => 57, 334 => 234
+        choice = int(choice[-3:]) - 100
         Employees.all_employees[choice].printDetails()
 
     elif op == 4:

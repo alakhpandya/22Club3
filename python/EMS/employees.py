@@ -11,8 +11,10 @@ Two purposes:
 class Employees(ABC): 
     all_employees=[]
     
-    def __init__(self,name,age,gender):
+    def __init__(self, name:str, age:int, gender:str):
+        assert name.__class__.__name__ == 'str', f'Name must be a string'
         self.name = name
+        assert age >= 18, f"We don't hire employees less than age 18. The age you entered ({age}) is too young to recruit"
         self.age = age
         self.gender = gender
         Employees.all_employees.append(self)
@@ -48,6 +50,7 @@ class Employees(ABC):
 
     @staticmethod
     def allEmployees():
+        # print(Employees.all_employees)
         print("-"*20)
         print("ID\tName")
         for employee in Employees.all_employees:
@@ -56,11 +59,14 @@ class Employees(ABC):
     
     @staticmethod
     @abstractmethod
-    def addEmployee():
+    def addEmployee() -> object:
         name = input("Name: ")
         age = int(input("Age: "))
         gender = input("Gender: ")
         return name, age, gender
+
+    def __repr__(self) -> str:
+        return f"({self.name}, {self.__class__.__name__})"
 
 if __name__ == "__main__":
     e1 = Employees("Rahi", 18, "Female")
