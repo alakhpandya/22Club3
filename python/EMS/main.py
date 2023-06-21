@@ -10,7 +10,7 @@ def printTitle():
     print("|" + "Welcome to Employee Management.".center(100) + "|")
     print("+" + "-"*100 + "+")
 
-
+ 
 printTitle()
 
 e1 = Peon("Sohan", 25, "M")

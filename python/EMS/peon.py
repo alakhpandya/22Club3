@@ -1,9 +1,10 @@
 from employees import Employees
 
 class Peon(Employees):
+    dep_id = "P"
+
     def __init__(self, name, age, gender):
         super().__init__(name, age, gender)
-        self.generateID("P")
         
     @classmethod
     def addEmployee(cls):

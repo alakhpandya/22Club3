@@ -2,10 +2,11 @@ from employees import Employees
 
 class SalesExecutive(Employees):
     target = 1000000
+    dep_id = "S"
+
     def __init__(self, name, age, gender, area):
         super().__init__(name, age, gender)
         self.area = area
-        self.generateID("S")
 
     def printDetails(self):
         super().printDetails()

@@ -18,6 +18,7 @@ class Employees(ABC):
         self.age = age
         self.gender = gender
         Employees.all_employees.append(self)
+        self.generateID(self.dep_id)
     
     def generateID(self, code):
         joinDate = datetime.today()

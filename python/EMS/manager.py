@@ -2,11 +2,11 @@ from employees import Employees
 
 class Manager(Employees):
     team_size = 10
+    dep_id = "M"
 
     def __init__(self, name, age, gender, qualification):
         super().__init__(name, age, gender)
         self.qualification = qualification
-        self.generateID("M")
 
     def printDetails(self):
         super().printDetails()

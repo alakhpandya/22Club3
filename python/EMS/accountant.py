@@ -1,9 +1,9 @@
 from employees import Employees
 
 class Accountant(Employees):
+    dep_id = "A"
     def __init__(self, name, age, gender):
         super().__init__(name, age, gender)
-        self.generateID("A")
 
     @classmethod
     def addEmployee(cls):
