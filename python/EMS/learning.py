@@ -22,16 +22,12 @@ class Products():
 
     _mrp = 150       # protected variable
 
-    @property
-    def mrp(self):
-        return self._mrp
-    
     @staticmethod
     def _updateMRP():   # protected method
         Products._mrp = float(input("New MRP: "))
 
     __costPrice = 95        # private variable
-    
+
     @staticmethod
     def accessCostPrice():
         return Products.__costPrice
@@ -67,4 +63,4 @@ print("Cost price of products:", Products._Products__costPrice)
 print("Cost price of p1:", p1._Products__costPrice)
 print("Cost price of k1:", k1._Products__costPrice)
 """
-print(p1._mrp)
+# print(p1._mrp)
