@@ -10,7 +10,6 @@ def printTitle():
     print("|" + "Welcome to Employee Management.".center(100) + "|")
     print("+" + "-"*100 + "+")
 
- 
 printTitle()
 
 e1 = Peon("Sohan", 25, "M")
@@ -46,17 +45,15 @@ while True:
         options[role]()
 
     elif op == 3:
-        Employees.allEmployees()
-        choice = input("Enter ID of the employee: ")        # id: 2303M101  => 1, 157 => 57, 334 => 234
-        choice = int(choice[-3:]) - 100
+        choice = Employees.selectEmployee()
         Employees.all_employees[choice].printDetails()
 
     elif op == 4:
-        Employees.allEmployees()
-        choice = int(input("Enter sr no of the car you want view details of: "))
+        choice = Employees.selectEmployee()
         Employees.all_employees[choice].editDetails()
 
     elif op == 5:
-        pass
+        Employees.removeEmployees()
+
     elif op == 9:
         break

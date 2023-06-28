@@ -13,3 +13,7 @@ class Accountant(Employees):
     def printDetails(self):
         super().printDetails()
         print("-----------X-----------X-----------")
+
+    def editDetails(self):
+        super().editDetails()
+        

@@ -19,34 +19,55 @@ class Employees(ABC):
         self.gender = gender
         Employees.all_employees.append(self)
         self.generateID(self.dep_id)
+        self.isActive = True
     
     def generateID(self, code):
         joinDate = datetime.today()
         joinYear = str(joinDate.year)[2:]
         joinMonth = str(joinDate.month).zfill(2)
         srNo = str(len(Employees.all_employees) + 99)
-        self.id = joinYear + joinMonth + code + srNo
+        self.__id = joinYear + joinMonth + code + srNo
+
+    # getter
+    @property
+    def idNo(self):
+        return self.__id
+    
+    # setter
+    @idNo.setter
+    def idNo(self, newId):
+        self.__id = newId
+
+    @staticmethod
+    def selectEmployee():
+        Employees.allEmployees()
+        choice = input("Enter ID of the employee: ")
+        choice = int(choice[-3:]) - 100
+        return choice
 
     @abstractmethod
     def printDetails(self):
         print(f"---------Details of {self.name}---------")
-        print("Employees ID:",self.id)
+        print("Employees ID:",self.idNo)
         print("Employees age:",self.age)
         print("Employees gender:",self.gender)
-        
-    
+
     def editDetails(self):
         print("Enter new details (Press 'Enter' to keep the same detail):")
         name = input("Name: ")
+        if name != "":
+            self.name = name
         age = input("Age: ")
+        if age != "":
+            self.age = int(age)
         gender = input("Gender: ")
-        return {"name" : name, "age" : age, "gender" : gender}
+        if gender != "":
+            self.gender = gender
     
     def removeEmployees(self):
-        Employees.all_employees()
-        choice = int(input("Enter sr no of the Employees you want delete: "))
-        removedEmp = Employees.allEmployees.pop(choice)
-        print(f"Employees {removedEmp.name} has been removed successfully!")
+        choice = Employees.selectEmployee()
+        Employees.all_employees[choice].isActive = False
+        print(f"Employees {Employees.all_employees[choice].name} has been removed successfully!")
         print()
 
     @staticmethod
@@ -55,7 +76,8 @@ class Employees(ABC):
         print("-"*20)
         print("ID\tName")
         for employee in Employees.all_employees:
-            print(f"{employee.id}\t{employee.name}")
+            if employee.isActive:
+                print(f"{employee.idNo}\t{employee.name}")
         print("-"*20)
     
     @staticmethod

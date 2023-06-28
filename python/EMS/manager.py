@@ -19,3 +19,12 @@ class Manager(Employees):
         name, age, gender = super().addEmployee()
         qualification = input("Qualification: ")
         return cls(name, age, gender, qualification)
+
+    def editDetails(self):
+        super().editDetails()
+        team_size = input("Team size: ")
+        if team_size != "":
+            self.team_size = int(team_size)
+        qualification = input("Qualification: ")
+        if qualification != "":
+            self.qualification = qualification

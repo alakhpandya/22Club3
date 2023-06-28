@@ -28,6 +28,17 @@ class Products():
 
     __costPrice = 95        # private variable
 
+    # getter
+    @property
+    def dealerPrice(self):
+        return self.__costPrice
+
+    # setter
+    @dealerPrice.setter
+    def dealerPrice(self, newDealerPrice):
+        self.__costPrice = newDealerPrice
+        # return self.__costPrice
+
     @staticmethod
     def accessCostPrice():
         return Products.__costPrice
@@ -64,3 +75,5 @@ print("Cost price of p1:", p1._Products__costPrice)
 print("Cost price of k1:", k1._Products__costPrice)
 """
 # print(p1._mrp)
+print(p1.dealerPrice)
+p1.dealerPrice = 105
