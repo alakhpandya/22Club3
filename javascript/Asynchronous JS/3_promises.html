@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Steps                                       Time (s)
+    Recieve the order                           2
+    Chop the vegetables                         3
+    Add masala, noodles & vegetables in water   1
+    Boil                                        4
+    Take Plate                                  1
+    Prepare sandwich                            3
+    Serve                                       2
+    */
+    
+    is_open = false;
+
+    let order = (time, task) => {
+        return new Promise((resolve, reject) => {
+            // resolve condition
+            if (is_open){
+                setTimeout(() => {
+                    resolve(task());
+                }, time)
+            }
+            else{
+                // reject condition
+                console.log("Error 404: Shop is closed.");
+            }
+        })
+    }
+
+    order(0, () => console.log("Recieving order..."))
+    .then(() => order(2000, () => console.log("Order recieved, chopping the vegetales")))
+    .then(() => order(3000, () => console.log("Adding masala")))
+    .then(() => order(1000, () => console.log("Boiling")))
+    .then(() => order(4000, () => console.log("Taking plate")))
+    .then(() => order(3000, () => console.log("Preparing sandwich")))
+    .then(() => order(2000, () => console.log("Here's your sandwich!")))
+</script>
+</html>
