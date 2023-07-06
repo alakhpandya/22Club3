@@ -19,9 +19,7 @@
     Prepare sandwich                            3
     Serve                                       2
     */
-    
-    is_open = false;
-
+    let is_open = false;
     let order = (time, task) => {
         return new Promise((resolve, reject) => {
             // resolve condition
@@ -32,7 +30,7 @@
             }
             else{
                 // reject condition
-                console.log("Error 404: Shop is closed.");
+                reject(console.log("Error 404: Shop is closed."));
             }
         })
     }
@@ -44,5 +42,10 @@
     .then(() => order(4000, () => console.log("Taking plate")))
     .then(() => order(3000, () => console.log("Preparing sandwich")))
     .then(() => order(2000, () => console.log("Here's your sandwich!")))
+
+    .catch(() => console.log('Refund issued, customer left the shop.'))
+    .finally(() => console.log("Let's calculate today's profit!"))
+
+    // console.log("Let's calculate today's profit!")
 </script>
 </html>
