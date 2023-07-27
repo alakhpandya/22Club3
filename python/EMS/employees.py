@@ -1,5 +1,6 @@
 from datetime import datetime
 from abc import ABC, abstractmethod
+
 # abc: abstract base classes
 # ABC: Abstract Base Class
 # Abstraction
@@ -91,7 +92,20 @@ class Employees(ABC):
     def __repr__(self) -> str:
         return f"({self.name}, {self.__class__.__name__})"
 
+    @staticmethod
+    def putObjectsToCSV():
+        f = open('staff.csv', 'r')
+        data = f.readlines()
+        f.close()
+        for employee in Employees.all_employees:
+            new_employee = []
+            for key, value in employee.__dict__:
+                new_employee.append(f"{key}:{value}")
+            data.append(new_employee)
+
+
 if __name__ == "__main__":
-    e1 = Employees("Rahi", 18, "Female")
+    # e1 = Employees("Rahi", 18, "Female")
     # print(e1)
     # e1.printDetails()
+    Employees.getObjectsFromCSV()

@@ -1,3 +1,4 @@
+import csv
 from employees import Employees
 from accountant import Accountant
 from general_manager import GeneralManager
@@ -10,12 +11,25 @@ def printTitle():
     print("|" + "Welcome to Employee Management.".center(100) + "|")
     print("+" + "-"*100 + "+")
 
-printTitle()
+def getObjectsFromCSV():
+        f = open('staff.csv', 'r')
+        data = csv.reader(f, delimiter=',')
+        for row in data:
+            role = row[3][-4]
+            if role == 'P':
+                Peon.addEmployee()
+        f.close()
+
+# printTitle()
 
 e1 = Peon("Sohan", 25, "M")
 e2 = Manager("Rohan", 23, "M", "PGDBA")
 e3 = GeneralManager("Dhruvi", 30, "F", "MTech")
 
+print(e1.__dict__)
+print(e2.__dict__)
+print(e3.__dict__)
+"""
 while True:
     print("\nPress\n1 to see all details of employees:")
     print("2 to Add new employees:")
@@ -57,3 +71,4 @@ while True:
 
     elif op == 9:
         break
+"""
