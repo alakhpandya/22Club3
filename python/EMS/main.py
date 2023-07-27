@@ -12,24 +12,44 @@ def printTitle():
     print("+" + "-"*100 + "+")
 
 def getObjectsFromCSV():
-        f = open('staff.csv', 'r')
-        data = csv.reader(f, delimiter=',')
+        with open('staff.csv', 'r') as f:
+            data = list(csv.reader(f))
+
+        data_dict = []
         for row in data:
-            role = row[3][-4]
-            if role == 'P':
-                Peon.addEmployee()
-        f.close()
+            temp = {}
+            for pair in row:
+                key, value = pair.split(':')
+                temp[key] = value
+            data_dict.append(temp)
+        # print(data_dict)
+        for emp_dict in data_dict:
+            role = emp_dict['_Employees__id'][-4]
+            if role == "S":
+                SalesExecutive(emp_dict['name'], int(emp_dict['age']), emp_dict['gender'], emp_dict['area'])
+            elif role == "A":
+                Accountant(emp_dict['name'], int(emp_dict['age']), emp_dict['gender'])
+            elif role == "M":
+                Manager(emp_dict['name'], int(emp_dict['age']), emp_dict['gender'], emp_dict['qualification'])
+            elif role == 'P':
+                Peon(emp_dict['name'], int(emp_dict['age']), emp_dict['gender'])
+            elif role == 'G':
+                GeneralManager(emp_dict['name'], int(emp_dict['age']), emp_dict['gender'], emp_dict['qualification'])
+            else:
+                print("Please update the program to avail this feature.")
 
-# printTitle()
+def putObjectsToCSV():
+    data = []
+    for employee in Employees.all_employees:
+        new_employee = []
+        for key, value in employee.__dict__.items():
+            new_employee.append(f"{key}:{value}")
+        data.append(",".join(new_employee) + "\n")
+    with open('staff.csv', 'w') as f:
+        f.writelines(data)
 
-e1 = Peon("Sohan", 25, "M")
-e2 = Manager("Rohan", 23, "M", "PGDBA")
-e3 = GeneralManager("Dhruvi", 30, "F", "MTech")
-
-print(e1.__dict__)
-print(e2.__dict__)
-print(e3.__dict__)
-"""
+printTitle()
+getObjectsFromCSV()
 while True:
     print("\nPress\n1 to see all details of employees:")
     print("2 to Add new employees:")
@@ -67,8 +87,9 @@ while True:
         Employees.all_employees[choice].editDetails()
 
     elif op == 5:
-        Employees.removeEmployees()
+        choice = Employees.selectEmployee()
+        Employees.all_employees[choice].removeEmployees()
 
     elif op == 9:
         break
-"""
+putObjectsToCSV()

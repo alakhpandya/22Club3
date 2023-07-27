@@ -1,3 +1,5 @@
-name:Sohan,age:25,gender:M,_Employees__id:2307P100,isActive:True
-name:Rohan,age:23,gender:M,_Employees__id:2307M101,isActive:True,qualification:PGDBA
+name:Sohan,age:25,gender:M,_Employees__id:2307P100,isActive:False
+name:Rohankumar,age:23,gender:M,_Employees__id:2307M101,isActive:True,qualification:PGDBA,team_size:13
 name:Dhruvi,age:30,gender:F,_Employees__id:2307G102,isActive:True,qualification:MTech
+name:Anil,age:27,gender:M,_Employees__id:2307A103,isActive:True
+name:Sunil,age:31,gender:M,_Employees__id:2307S104,isActive:True,area:Nikol

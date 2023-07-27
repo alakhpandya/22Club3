@@ -66,9 +66,8 @@ class Employees(ABC):
             self.gender = gender
     
     def removeEmployees(self):
-        choice = Employees.selectEmployee()
-        Employees.all_employees[choice].isActive = False
-        print(f"Employees {Employees.all_employees[choice].name} has been removed successfully!")
+        self.isActive = False
+        print(f"Employees {self.name} has been removed successfully!")
         print()
 
     @staticmethod
@@ -92,20 +91,10 @@ class Employees(ABC):
     def __repr__(self) -> str:
         return f"({self.name}, {self.__class__.__name__})"
 
-    @staticmethod
-    def putObjectsToCSV():
-        f = open('staff.csv', 'r')
-        data = f.readlines()
-        f.close()
-        for employee in Employees.all_employees:
-            new_employee = []
-            for key, value in employee.__dict__:
-                new_employee.append(f"{key}:{value}")
-            data.append(new_employee)
+
 
 
 if __name__ == "__main__":
-    # e1 = Employees("Rahi", 18, "Female")
-    # print(e1)
+    e1 = Employees("Rahi", 18, "Female")
+    print(e1)
     # e1.printDetails()
-    Employees.getObjectsFromCSV()
